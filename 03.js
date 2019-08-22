@@ -3,11 +3,13 @@
 // 2. Crie uma variáveis que tenha apenas os usuários do sexo feminino e com mais de 18 anos - reduce
 // 3. Crie uma variável que procura por um usuário que more na cidade chamada Monroe - find
 // 4. Multiplique a idade de todos usuários por dois e depois realize um filtro nos usuários que possuem no máximo 50 anos
+const d = require("./data.json");
 
-const data = require("./data.json");
-//1. Mostrar idade dos usuários
-const idades = data.map(data =>
-     `${data.first_name} tem: ${data.age} anos`
+const cidade = d.find(endereco=> 
+  endereco.address.city.toLowerCase() === 'Monroe'.toLowerCase()
 );
-console.table(idades);
+  console.log(cidade);
+
+
+
 

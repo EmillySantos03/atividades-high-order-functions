@@ -235,7 +235,7 @@
     "gender": "Male",
     "age": null,
     "address": {
-      "city": "Newark",
+      "city": "newark",
       "state": "NJ"
     }
   }

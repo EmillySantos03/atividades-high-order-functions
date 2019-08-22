@@ -5,9 +5,10 @@
 // 4. Multiplique a idade de todos usuários por dois e depois realize um filtro nos usuários que possuem no máximo 50 anos
 
 const data = require("./data.json");
-//1. Mostrar idade dos usuários
-const idades = data.map(data =>
-     `${data.first_name} tem: ${data.age} anos`
-);
-console.table(idades);
 
+console.table(data);
+data.forEach(user => (user.age *= 2));
+console.table(data);
+const idade = data.filter(user => user.age <= 50 && user.age > 0);
+
+console.table(idade);
